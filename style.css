@@ -20,12 +20,12 @@
     width: 20vw; /* Adjust the width as needed */
     height: auto;
     display: block;
-    margin: 50px auto; /* Adds space around the logo and centers it */
+    margin: 60px auto; /* Adds space around the logo and centers it */
 }
 
 .title {
     /* Style your title here if needed */
-    margin: 20px 0; /* Adds space above and below the title */
+    margin: 60px 0; /* Adds space above and below the title */
 }
 
 /* Additional styling for other elements can go here */
