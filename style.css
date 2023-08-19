@@ -13,14 +13,15 @@
     width: 80vw;
     max-width: 600px; /* Optional: Sets a maximum width for the container */
     margin: 0 auto; /* Centers the container */
-    margin-top: 100px;
+    margin-top: 00px;
 }
 
 .logo-image {
-    width: 40vw; /* Adjust the width as needed */
+    width: 60vw; /* Adjust the width as needed */
+    max-width: 400px;
     height: auto;
     display: block;
-    margin: 60px auto; /* Adds space around the logo and centers it */
+    margin: 140px auto; /* Adds space around the logo and centers it */
 }
 
 .title {
