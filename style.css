@@ -19,3 +19,10 @@ body, html {
     font-weight: bold;
     text-align: center;
 }
+
+.logo-image {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Centers the image if used with margin: auto */
+    margin: 0 auto; /* Centers the image */
+}
