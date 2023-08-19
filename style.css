@@ -5,10 +5,10 @@
 }
 
 .logo-image {
-    width: 100px; /* Adjust the width as needed */
+    width: 300px; /* Adjust the width as needed */
     height: auto;
     display: block;
-    margin: 20px auto; /* Adds space around the logo and centers it */
+    margin: 50px auto; /* Adds space around the logo and centers it */
 }
 
 .title {
