@@ -10,13 +10,14 @@
 
 .container {
     text-align: center; /* Center-aligns the content */
+    width: 80vw;
     max-width: 600px; /* Optional: Sets a maximum width for the container */
     margin: 0 auto; /* Centers the container */
     margin-top: 100px;
 }
 
 .logo-image {
-    width: 500px; /* Adjust the width as needed */
+    width: 20vw; /* Adjust the width as needed */
     height: auto;
     display: block;
     margin: 50px auto; /* Adds space around the logo and centers it */
