@@ -1,28 +1,19 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    height: 100%;
-}
-
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.title {
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
+    text-align: center; /* Center-aligns the content */
+    max-width: 600px; /* Optional: Sets a maximum width for the container */
+    margin: 0 auto; /* Centers the container */
 }
 
 .logo-image {
-    width: 100px; /* Adjust as needed */
-    height: auto; /* Keeps the aspect ratio */
-    display: block; /* Centers the image if used with margin: auto */
-    margin: 0 auto; /* Centers the image */
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Adds space around the logo and centers it */
 }
+
+.title {
+    /* Style your title here if needed */
+    margin: 20px 0; /* Adds space above and below the title */
+}
+
+/* Additional styling for other elements can go here */
