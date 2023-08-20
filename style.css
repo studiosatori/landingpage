@@ -14,23 +14,50 @@ body, html {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 15px 0;
 }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 0 15px;
+
+nav {
+  display: flex;
+  justify-content: center;
 }
+
+nav a {
+  position: relative;
+  display: inline-block;
+  color: gold;
+  font-size: 22px;
+  padding: 0 15px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15px; /* Adjust to match horizontal padding of a element */
+  right: 15px; /* Adjust to match horizontal padding of a element */
+  transform: scaleX(0);
+  transform-origin: center;
+  height: 2px;
+  background-color: #ff00cc;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
 
 .hero {
     background-color: black;
-    color: white;
+    color: gold;
     font-family: sans-serif;
     text-align: center;
-    padding: 100px 15px;
+    padding: 0px 120px;
+    font-size: 36px;
 }
 .cta-button {
     display: inline-block;
@@ -42,11 +69,22 @@ nav a {
 }
 
 section {
-    padding: 60px 15px;
+  padding: 60px 300px;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.4; /* Adjust the line height as needed */
+}
+
+  
+
+#logo {
+  display: block;
+  margin: 80px auto;
+  width: 460px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #00;
     padding: 30px 15px;
 }
 
@@ -66,4 +104,6 @@ footer {
     section {
         padding: 30px 15px;
     }
+
+   
 }
