@@ -10,6 +10,7 @@ body, html {
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
+    text-align: center;
 }
 
 header {
@@ -86,7 +87,13 @@ section {
 footer {
     background-color: #00;
     padding: 30px 15px;
+    
 }
+
+footer .section {
+  text-align: center;
+}
+
 
 @media screen and (max-width: 768px) {
     header {
