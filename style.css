@@ -24,12 +24,16 @@ align-items: center;
 height: 100px;
 position: fixed;
 width: 100%;
-backdrop-filter: blur(150px);
--webkit-backdrop-filter: blur(15px);
-border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+border-bottom: 1px solid rgb(162, 162, 162);
 padding: 0px 5%;
 z-index: 1;
+  transition: background-color 0.7s ease;
 }
+
+.transparent-nav {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 .logo a {
 font-weight: 700;
 color: #000000;
