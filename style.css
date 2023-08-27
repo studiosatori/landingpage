@@ -147,8 +147,9 @@ margin: 40px;
 .section-container {
   padding: 60px 18vw;
   text-align: left;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.4; /* Adjust the line height as needed */
+  min-height: 400px;
 }
 
 
@@ -212,6 +213,31 @@ margin: 40px;
   color: #888888;
 }
 
+.foot {
+  font-size: 12px;
+  color: grey;
+  text-align: center;
+  padding: 60px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #007bff; /* Change hyperlink color */
+  transition: color 0.3s ease; /* Add smooth color transition */
+}
+
+a:hover {
+  color: #00bfff; /* Change hyperlink color on hover */
+}
+
+
+
+
+
+
+
 
 
 
@@ -235,8 +261,8 @@ margin: 40px;
 /* Styles for screens larger than 768px (e.g., desktops) */
 @media (min-width: 1200px) {
   .section-container {
-    padding: 60px 18vw;
-    font-size: 26px;
+    padding: 60px 26vw;
+    font-size: 20px;
   }
 
   .card-container {
