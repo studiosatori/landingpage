@@ -17,47 +17,75 @@ list-style: none;
 a {
 text-decoration: none;
 }
-nav {
-justify-content: space-around;
-display: inline-flex;
-align-items: center;
-height: 100px;
-position: fixed;
-width: 100%;
-border-bottom: 1px solid rgb(162, 162, 162);
-padding: 0px 5%;
-z-index: 1;
-  transition: background-color 0.7s ease;
-}
 
 .transparent-nav {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+nav {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid rgb(162, 162, 162);
+  padding: 0px 5%;
+  z-index: 1;
+  transition: background-color 0.7s ease;
+  flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+}
+
 .logo a {
-font-weight: 700;
-color: #000000;
-font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  font-size: 2rem;
+  flex: 1; /* Allow the logo to take up available space */
 }
+
 nav ul {
-display: flex;
+  display: flex;
+  flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+  justify-content: flex-end; /* Align navigation items to the right */
+  flex: 1; /* Allow navigation items to take up available space */
 }
+
+nav ul li {
+  margin: 10px;
+}
+
 nav ul li a {
-height: 40px;
-line-height: 43px;
-margin: 10px;
-padding: 0px 30px;
-display: flex;
-font-size: 1rem;
-font-weight: 600;
-color: #000000;
-transition: 0.1s;
+  height: 40px;
+  line-height: 43px;
+  padding: 0px 30px;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+  transition: 0.1s;
 }
-nav ul li a:hover,
-.main-text a:hover {
-background: rgba(255, 255, 255, 1);
-border-radius: 50px;
-color: #000000;
+
+/* Styles for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: flex-start; /* Align navigation items to the left */
+    height: auto; /* Allow the navigation height to adjust based on content */
+    padding: 10px 5%; /* Adjust the padding for smaller screens */
+  }
+
+  .logo a {
+    margin-bottom: 10px; /* Add space below the logo */
+  }
+
+  nav ul {
+    justify-content: flex-start; /* Align navigation items to the left */
+    margin-top: 10px; /* Add space above the navigation items */
+  }
+
+  nav ul li {
+    margin: 5px 0; /* Adjust the margin for smaller screens */
+  }
 }
 
 .btn{
@@ -183,3 +211,75 @@ margin: 40px;
   font-size: 14px;
   color: #888888;
 }
+
+
+
+
+/* Styles for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 767px) {
+  .section-container {
+    padding: 40px 10vw; /* Adjust the padding for smaller screens */
+    font-size: 20px; /* Adjust the font size for smaller screens */
+  }
+
+  .card-container {
+    justify-content: center; /* Center the cards on smaller screens */
+  }
+
+  .card {
+    width: 100%; /* Make the cards occupy the full width on smaller screens */
+    margin-right: 0; /* Remove the right margin on smaller screens */
+  }
+}
+
+/* Styles for screens larger than 768px (e.g., desktops) */
+@media (min-width: 1200px) {
+  .section-container {
+    padding: 60px 18vw;
+    font-size: 26px;
+  }
+
+  .card-container {
+    justify-content: flex-start;
+  }
+
+  .card {
+    width: calc(50% - 26px); /* Adjust the width of the cards for larger screens */
+    margin-right: 32px;
+  }
+
+  .logo-mobile {
+    display: none;
+
+}
+}
+
+
+
+
+/* Styles for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 1199px) {
+
+  nav {
+    display: none; /* Hide the navigation on smaller screens */
+  }
+
+  .hero {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #FBD757;
+    text-align: center;
+    padding: 0px 00px;
+    line-height: 62px;
+    font-size: 36px;
+    margin: 0px;
+    
+    }
+
+    .logo-mobile {
+      margin-top: 60px;
+    }  
+
+}
+
+
